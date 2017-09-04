@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明星空间-名星榜</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <script src="bodymovin.min.js"></script>
+</head>
+<body style="background-color: #000;">
+    <div id="animation"></div>
+    <script>
+        bodymovin.loadAnimation({
+            path:'data.json',   //json文件路径
+            loop:true,
+            autoplay:true,
+            renderer:'canvas',  //渲染方式，有"html"、"canvas"和"svg"三种
+            container:document.getElementById('animation')
+        });
+        //bodymovin.js的完整api文档见GitHub项目首页(https://github.com/bodymovin/bodymovin)
+
+ // bodymovin动画
+ //    var animData = {
+ //      path:'../img/rank/data.json',   //json文件路径
+ //      loop:true,
+ //      autoplay:false,
+ //      renderer:'canvas',  //渲染方式，有"html"、"canvas"和"svg"三种
+ //      container:document.getElementById('animation')
+
+ //    };
+ //    var anim = bodymovin.loadAnimation(animData);
+
+ // anim.goToAndPlay(30, true); 
+ //      anim.play();
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
